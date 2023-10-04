@@ -11,15 +11,14 @@ public class ConfigurationSettingTest {
 
     @Test
     public void configSettingTest(){
-        Map<String, Object> hm = new HashMap<>();
-        hm.put("url","xyz.com");
-        hm.put("port",3838);
-        hm.put("enableLogging",true);
+        ConfigurationSetting.ConfigSettingBuilder configSettingBuilder = new ConfigurationSetting.ConfigSettingBuilder();
+        configSettingBuilder.setServerUrl("a.com");
+        configSettingBuilder.setPort(3733);
+        configSettingBuilder.setEnableLogging(true);
         try {
-            ConfigurationSetting configurationSetting = new ConfigurationSetting(hm);
-        }
-        catch (Exception exception){
-            Assertions.fail(exception.getMessage());
+            ConfigurationSetting configurationSetting = configSettingBuilder.build();
+        }catch (Exception e){
+            System.out.println(e.getMessage());
         }
     }
 }

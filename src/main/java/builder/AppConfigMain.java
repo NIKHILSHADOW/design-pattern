@@ -5,10 +5,14 @@ import java.util.Map;
 
 public class AppConfigMain {
     public static void main(String[] args) {
-        Map<String, Object> hm = new HashMap<>();
-        hm.put("url","xyz.com");
-        hm.put("port",9399);
-        hm.put("enableLogging",true);
-        ConfigurationSetting configurationSetting = new ConfigurationSetting(hm);
+        ConfigurationSetting.ConfigSettingBuilder configSettingBuilder = new ConfigurationSetting.ConfigSettingBuilder();
+        configSettingBuilder.setServerUrl("a.com");
+        configSettingBuilder.setPort(3733);
+        configSettingBuilder.setEnableLogging(true);
+        try {
+            ConfigurationSetting configurationSetting = configSettingBuilder.build();
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }

@@ -1,6 +1,6 @@
 package builder;
 
-import java.util.Map;
+import lombok.Setter;
 
 public class ConfigurationSetting {
     // fields declared final as it need immutable instance
@@ -10,40 +10,62 @@ public class ConfigurationSetting {
 
     // fields are declared private, so that field values can only be intialised inside class, so
     // we can validate the fields
-    public ConfigurationSetting(Map<String,Object> values){
+    private ConfigurationSetting(){}
 
-        if(!isValidUrl((String)values.get("url"))){
-            throw new RuntimeException("url is wrong please check!!");
+    public static class ConfigSettingBuilder{
+        private String serverUrl;
+        private Integer port;
+        private Boolean enableLogging;
+
+        public ConfigurationSetting build(){
+            if(!validServerUrl(this.serverUrl)){
+                throw new RuntimeException("wrong url, please check!!!");
+            }
+
+            if(!validPort(this.port)){
+                throw new RuntimeException("wrong port, please check!!!");
+            }
+
+            if(!validEnableLogging(enableLogging)){
+                throw new RuntimeException("wrong enableLogginf field, please check!!!");
+            }
+
+            ConfigurationSetting configurationSetting = new ConfigurationSetting();
+            configurationSetting.serverUrl = this.serverUrl;
+            configurationSetting.port = this.port;
+            configurationSetting.enableLogging = this.enableLogging;
+            return configurationSetting;
         }
 
-        if(!isValidPort((Integer) values.get("port"))){
-            throw new RuntimeException("port is wrong, please check!!");
+        Boolean validServerUrl(String serverUrl){
+            // check based on requirement
+
+            return true;
         }
 
-        if(!isValidEnableLogging((Boolean) values.get("enableLogging"))){
-            throw new RuntimeException("enalble logging field is wrong!!");
+        Boolean validPort(Integer port){
+            // check based on requirement
+
+            return true;
         }
 
-        this.serverUrl = (String) values.get("url");
-        this.port = (Integer) values.get("port");
-        this.enableLogging = (Boolean) values.get("enableLogging");
+        Boolean validEnableLogging(Boolean enableLogging){
+            // check based on requirement
+
+            return true;
+        }
+
+        public void setServerUrl(String serverUrl) {
+            this.serverUrl = serverUrl;
+        }
+
+        public void setPort(Integer port) {
+            this.port = port;
+        }
+
+        public void setEnableLogging(Boolean enableLogging) {
+            this.enableLogging = enableLogging;
+        }
     }
 
-    Boolean isValidUrl(String serverUrl){
-        // check according to requirement.
-
-        return true;
-    }
-
-    Boolean isValidPort(Integer port){
-        // check according to requirement
-
-        return true;
-    }
-
-    Boolean isValidEnableLogging(Boolean enableLogging){
-        // check according to requirement
-
-        return true;
-    }
 }
