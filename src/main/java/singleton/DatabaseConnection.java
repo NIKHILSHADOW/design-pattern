@@ -1,4 +1,4 @@
-package org.example;
+package singleton;
 
 public class DatabaseConnection {
     private static DatabaseConnection instance = null;

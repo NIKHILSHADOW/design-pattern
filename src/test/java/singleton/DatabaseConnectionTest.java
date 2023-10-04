@@ -1,7 +1,8 @@
-package org.example;
+package singleton;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import singleton.DatabaseConnection;
 
 public class DatabaseConnectionTest {
 
