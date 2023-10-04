@@ -11,10 +11,10 @@ public class ConfigurationSettingTest {
 
     @Test
     public void configSettingTest(){
-        ConfigurationSetting.ConfigSettingBuilder configSettingBuilder = new ConfigurationSetting.ConfigSettingBuilder();
-        configSettingBuilder.setServerUrl("a.com");
-        configSettingBuilder.setPort(3733);
-        configSettingBuilder.setEnableLogging(true);
+        ConfigurationSetting.ConfigSettingBuilder configSettingBuilder = ConfigurationSetting.ConfigSettingBuilder.toBuilder()
+        .setServerUrl("a.com")
+        .setPort(3733)
+        .setEnableLogging(true);
         try {
             ConfigurationSetting configurationSetting = configSettingBuilder.build();
         }catch (Exception e){

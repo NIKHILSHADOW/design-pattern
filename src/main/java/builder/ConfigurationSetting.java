@@ -17,6 +17,12 @@ public class ConfigurationSetting {
         private Integer port;
         private Boolean enableLogging;
 
+        private ConfigSettingBuilder(){};
+
+        public static ConfigSettingBuilder toBuilder(){
+            return new ConfigSettingBuilder();
+        }
+
         public ConfigurationSetting build(){
             if(!validServerUrl(this.serverUrl)){
                 throw new RuntimeException("wrong url, please check!!!");
@@ -55,16 +61,19 @@ public class ConfigurationSetting {
             return true;
         }
 
-        public void setServerUrl(String serverUrl) {
+        public ConfigSettingBuilder setServerUrl(String serverUrl) {
             this.serverUrl = serverUrl;
+            return this;
         }
 
-        public void setPort(Integer port) {
+        public ConfigSettingBuilder setPort(Integer port) {
             this.port = port;
+            return this;
         }
 
-        public void setEnableLogging(Boolean enableLogging) {
+        public ConfigSettingBuilder setEnableLogging(Boolean enableLogging) {
             this.enableLogging = enableLogging;
+            return this;
         }
     }
 
