@@ -1,7 +1,4 @@
-package builder;
-
-import java.util.HashMap;
-import java.util.Map;
+package builder.configuration;
 
 public class AppConfigMain {
     public static void main(String[] args) {

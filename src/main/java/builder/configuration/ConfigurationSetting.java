@@ -1,6 +1,4 @@
-package builder;
-
-import lombok.Setter;
+package builder.configuration;
 
 public class ConfigurationSetting {
     // fields declared final as it need immutable instance

@@ -1,7 +1,5 @@
-package builder;
+package builder.configuration;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.Setter;
 @Setter
 public class ConfigSettingParam {
