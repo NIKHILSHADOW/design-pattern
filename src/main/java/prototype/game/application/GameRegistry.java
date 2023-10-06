@@ -1,4 +1,4 @@
-package prototype.game;
+package prototype.game.application;
 
 import java.util.HashMap;
 import java.util.Map;

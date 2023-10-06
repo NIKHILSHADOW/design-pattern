@@ -2,6 +2,9 @@ package prototype.game;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import prototype.game.application.BackgroundGameObject;
+import prototype.game.application.ForegroundGameObject;
+import prototype.game.application.GameObjectType;
 
 public class GameObjectTest {
     BackgroundGameObject backgroundGameObject = new BackgroundGameObject(100,100,200,200, GameObjectType.BACK_GROUND);

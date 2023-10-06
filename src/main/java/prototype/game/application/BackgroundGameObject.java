@@ -1,4 +1,4 @@
-package prototype.game;
+package prototype.game.application;
 
 import lombok.AccessLevel;
 import lombok.Getter;
