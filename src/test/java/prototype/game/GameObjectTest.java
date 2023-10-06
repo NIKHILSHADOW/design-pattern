@@ -4,13 +4,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class GameObjectTest {
-    BackgroundGameObject backgroundGameObject = new BackgroundGameObject(100,100,200,200,BackgroundGameObjectType.BACK_GROUND);
+    BackgroundGameObject backgroundGameObject = new BackgroundGameObject(100,100,200,200, GameObjectType.BACK_GROUND);
     ForegroundGameObject foregroundGameObject = new ForegroundGameObject();
 
     @Test
     public void backgroundObjectTest(){
         Assertions.assertNotNull(backgroundGameObject);
-        Assertions.assertEquals(backgroundGameObject.getType(),BackgroundGameObjectType.BACK_GROUND);
+        Assertions.assertEquals(backgroundGameObject.getType(), GameObjectType.BACK_GROUND);
         Assertions.assertEquals(backgroundGameObject.getX(),100);
         Assertions.assertEquals(backgroundGameObject.getY(),100);
         Assertions.assertEquals(backgroundGameObject.getWidth(),200);

@@ -16,13 +16,13 @@ public class BackgroundGameObject implements GameObject{
     private Integer y;
     private Integer width;
     private Integer height;
-    private BackgroundGameObjectType type;
+    private GameObjectType type;
 
     @Getter(AccessLevel.NONE)
     @Setter(AccessLevel.NONE)
     private List<Integer> pixels;
 
-    public BackgroundGameObject(Integer x, Integer y, Integer width, Integer height, BackgroundGameObjectType type){
+    public BackgroundGameObject(Integer x, Integer y, Integer width, Integer height, GameObjectType type){
         this.x = x;
         this.y = y;
         this.width = width;

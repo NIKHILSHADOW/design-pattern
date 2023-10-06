@@ -1,5 +1,5 @@
 package prototype.game;
 
-public enum BackgroundGameObjectType {
+public enum GameObjectType {
     FORE_GROUND, BACK_GROUND
 }

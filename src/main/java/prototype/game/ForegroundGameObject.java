@@ -13,7 +13,7 @@ public class ForegroundGameObject implements GameObject{
     private Integer y;
     private Integer width;
     private Integer height;
-    private BackgroundGameObjectType type;
+    private GameObjectType type;
 
     @Getter(AccessLevel.NONE)
     @Setter(AccessLevel.NONE)
