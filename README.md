@@ -98,6 +98,9 @@ Can we create instance for first object in each class, the answer is no, because
 
 So instead we ask our developer, to take create mapping class for us, so we can directly fetch.
 
+<b> 2. Prototype Registry : </b>
+1. Create a Mappper class and define two methods, one for adding prototypes into map, other fetching from map.
+
 ```java
 import java.util.HashMap;
 import java.util.Map;
