@@ -1,2 +1,4 @@
-package flyweight.game.background;public class Tree {
+package flyweight.game.background;
+
+public class Tree {
 }

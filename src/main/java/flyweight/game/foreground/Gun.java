@@ -1,2 +1,4 @@
-package flyweight.game.foreground;public class Gun {
+package flyweight.game.foreground;
+
+public class Gun {
 }

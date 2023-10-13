@@ -1,2 +1,4 @@
-package flyweight.game.background;public class House {
+package flyweight.game.background;
+
+public class House {
 }
