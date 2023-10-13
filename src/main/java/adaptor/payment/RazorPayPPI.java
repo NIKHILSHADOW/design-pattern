@@ -1,5 +1,7 @@
 package adaptor.payment;
 
+import adaptor.payment.external.razorpay.RazorpayStatus;
+import adaptor.payment.external.razorpay.Razorpayapi;
 import org.jetbrains.annotations.NotNull;
 
 // Adaptee

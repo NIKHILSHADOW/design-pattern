@@ -1,4 +1,4 @@
-package adaptor.payment;
+package adaptor.payment.external.payU;
 
 import lombok.Builder;
 

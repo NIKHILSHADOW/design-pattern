@@ -1,5 +1,8 @@
 package adaptor.payment;
 
+import adaptor.payment.external.payU.PayUApi;
+import adaptor.payment.external.payU.PayUInfo;
+import adaptor.payment.external.payU.PayUStatus;
 import org.jetbrains.annotations.NotNull;
 
 // adaptee Concrete Class
