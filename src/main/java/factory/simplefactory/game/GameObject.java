@@ -1,2 +1,5 @@
-package factory.simplefactory.game;public interface GameObject {
+package factory.simplefactory.game;
+
+public interface GameObject {
+
 }

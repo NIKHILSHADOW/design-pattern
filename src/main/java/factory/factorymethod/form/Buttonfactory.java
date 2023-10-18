@@ -1,4 +1,4 @@
-package factory.factorymethod.game;
+package factory.factorymethod.form;
 
 public class Buttonfactory implements Factory{
     @Override

@@ -1,4 +1,4 @@
-package factory.factorymethod.game;
+package factory.factorymethod.form;
 
 public class Checkboxfactory implements Factory{
     @Override

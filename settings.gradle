@@ -1,0 +1,6 @@
+rootProject.name = 'factory'
+include 'src:main:factory.simplefactory'
+findProject(':src:main:factory.simplefactory')?.name = 'factory.simplefactory'
+include 'src:main:factory-dp'
+findProject(':src:main:factory-dp')?.name = 'factory-dp'
+

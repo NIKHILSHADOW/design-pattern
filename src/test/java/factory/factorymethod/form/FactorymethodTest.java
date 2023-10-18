@@ -1,5 +1,6 @@
-package factory.factorymethod.game;
+package factory.factorymethod.form;
 
+import factory.abstractfactory.form.form.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

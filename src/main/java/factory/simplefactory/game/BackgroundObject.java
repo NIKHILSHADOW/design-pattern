@@ -1,2 +1,5 @@
-package factory.simplefactory.game;public class BackgroundObject {
+package factory.simplefactory.game;
+
+public class BackgroundObject implements GameObject{
+
 }

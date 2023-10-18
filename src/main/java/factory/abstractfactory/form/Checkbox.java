@@ -1,2 +1,5 @@
-package factory.abstractfactory.form;public class Checkbox {
+package factory.abstractfactory.form;
+
+public abstract class Checkbox {
+    public abstract Checkbox create();
 }

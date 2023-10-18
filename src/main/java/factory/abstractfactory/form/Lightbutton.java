@@ -1,2 +1,5 @@
-package factory.abstractfactory.form;public class Lightbutton {
+package factory.abstractfactory.form;
+
+public class Lightbutton extends Button{
+
 }
